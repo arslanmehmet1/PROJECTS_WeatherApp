@@ -14,12 +14,39 @@ body {
 body h1 {
   font-weight: 900;
 }
-.input-group {
-}
 
 .form-control {
   border: 0;
   outline: 0;
   border-bottom: 3px solid red;
   background: transparent;
+}
+.norepeat {
+  width: 75%;
+  display: block;
+}
+.card {
+  box-shadow: 5px 10px #888888;
+}
+.card-body {
+  background-color: rgba(234, 223, 223, 0.1);
+}
+.remove {
+  border-radius: 10px;
+  background-color: orange;
+  height: 2rem;
+  margin-top: 1rem;
+  position: absolute;
+  bottom: 1.2rem;
+  left: 14rem;
+}
+.tr {
+  font-size: 2rem;
+  background-color: chocolate;
+  border-radius: 2rem;
+  display: inline-block;
+  width: 2.5rem;
+  text-align: center;
+  margin-left: 1rem;
+  position: absolute;
 }
