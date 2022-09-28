@@ -46,13 +46,18 @@ const applyData = (data) => {
 
   row.innerHTML =
     `<div class="col-lg-3 col-md-4 col-sm-6">
-  <div class="card" >
-    <img src="./img/${weather[0].icon}.jpg" class="card-img-top" alt="..." />
-    <div class="card-body">
+      <div class="card" >
+        <img src="./img/${
+          weather[0].icon
+        }.jpg" class="card-img-top" alt="..." />
+     <div class="card-body">
       <h5 class="card-title display-4 text-center">${name} <span>${country}</span></h5>
       <p class="card-text display-5 text-center">${temp}°C</p>
       <p class="text-center">Min:${temp_min}°C - Max:${temp_max}°C</p>
-      <p class="text-center desc">${weather[0].description}</p>
+      <p class="text-center desc">${
+        weather[0].description[0].toUpperCase() +
+        weather[0].description.slice(1)
+      }</p>
       <div class="text-end">
           <i class="fa-solid fa-trash fa-xl"></i>
       </div>
