@@ -22,18 +22,21 @@ body h1 {
   background: transparent;
 }
 .norepeat {
-  width: 75%;
+  width: 100%;
   display: block;
+  background-color: red;
+  color: white;
+  font-size: 3rem;
 }
 .card {
   box-shadow: 5px 10px #888888;
   width: fit-content;
-  height: 35rem;
+  height: 45rem;
   transition: all 1s;
 }
 .card:hover {
-  /* transform: scale(1.05); */
-  /* cursor: pointer; */
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .card-body {
@@ -42,9 +45,10 @@ body h1 {
 .card-body span {
   font-size: 1.5rem;
 }
-/* i {
-  height: 2rem;
-  position: absolute;
-  bottom: 0.6rem;
-  left: 17rem;
-} */
+.text-end {
+  margin-bottom: -5rem;
+}
+
+.desc {
+  font-size: 2.5rem;
+}
